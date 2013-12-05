@@ -1,4 +1,4 @@
-// MyHabboPlus  Configuration
+// Habboeasy  Configuration
 
 var prefRelease;
 if(typeof GM_getMetadata != "undefined"){
