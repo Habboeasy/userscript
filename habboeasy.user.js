@@ -51,8 +51,8 @@
 // @resource    PNGSprites http://i.imgur.com/MhilY5Q.png
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @require     https://raw.github.com/MyHabboPlus/userscript/release/config.js
-// @require     https://raw.github.com/MyHabboPlus/userscript/release/langs.js
-// @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/system.js
+// @require     https://raw.github.com/Habboeasy/userscript/master/langs.js
+// @require     https://raw.github.com/Habboeasy/userscript/master/system.js
 // @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/updater.js
 // @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/habboHome.js
 // @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/habboSearch.js
