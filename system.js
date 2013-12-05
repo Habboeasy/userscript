@@ -199,7 +199,7 @@ if (window.top==window){
     // Twitter Lists
     if (dir=="/me" && prefTweetList=="1") {
         $("#twitterfeed-habblet-container .twitter-timeline").attr("width", "376").attr("height", "400");
-        $("#twitterfeed-habblet-container").after('<div style="float:left;"><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/HabboCOM"  data-widget-id='+twitterWidget[hotel]+' width="376" height="400">Tweets by @Habboeasyon/habbo-'+twitterHotel+'</a></div>');
+        $("#twitterfeed-habblet-container").after('<div style="float:left;"><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/OnHabboEasy"  data-widget-id='+twitterWidget[hotel]+' width="376" height="400">Tweets by @OnHabboEasy</a></div>');
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
     }
 }
