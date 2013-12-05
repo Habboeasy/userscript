@@ -1,4 +1,4 @@
-// MyHabboPlus Userscript (http://www.habbo-libre.biz) are under GPLv2: https://www.gnu.org/licenses/gpl-2.0.html
+// Habboeasy Userscript (http://www.habbo-libre.biz) are under GPLv2: https://www.gnu.org/licenses/gpl-2.0.html
 // ==UserScript==
 // @name        Habboeasy
 // @namespace   http://habbo-libre.biz
