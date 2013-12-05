@@ -1,4 +1,4 @@
-// MyHabboPlus Habbo Home module
+// Habboeasy Habbo Home module
 
 if (window.top==window){
 
