@@ -1,4 +1,4 @@
-// MyHabboPlus System module
+// Habboeasy System module
 if (window.top==window){
     // Config texts
     if(prefNewHabbo=="1"){
