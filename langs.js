@@ -1,4 +1,4 @@
-// MyHabboPlus Languages
+// Habboeasy Languages
 var prefLang;
 var text;
 function loadLang() {
