@@ -46,15 +46,15 @@
 // @grant       GM_getResourceText
 // @grant       GM_getResourceURL
 // @grant       GM_xmlhttpRequest
-// @resource    CSSnewhabbo https://raw.github.com/MyHabboPlus/userscript/release/css/newhabbo.css
-// @resource    CSSmyhabboplus https://raw.github.com/MyHabboPlus/userscript/release/css/myhabboplus.css
+// @resource    CSSnewhabbo https://raw.github.com/Habboeasy/userscript/master/newhabbo.css
+// @resource    CSSmyhabboplus https://raw.github.com/Habboeasy/userscript/master/habboeasy.css
 // @resource    PNGSprites http://i.imgur.com/MhilY5Q.png
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-// @require     https://raw.github.com/MyHabboPlus/userscript/release/config.js
+// @require     https://raw.github.com/Habboeasy/userscript/master/config.js
 // @require     https://raw.github.com/Habboeasy/userscript/master/langs.js
 // @require     https://raw.github.com/Habboeasy/userscript/master/system.js
-// @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/updater.js
-// @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/habboHome.js
-// @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/habboSearch.js
-// @require     https://raw.github.com/MyHabboPlus/userscript/release/modules/newArticles.js
+// @require     https://raw.github.com/Habboeasy/userscript/master/updater.js
+// @require     https://raw.github.com/Habboeasy/userscript/master/habboHome.js
+// @require     https://raw.github.com/Habboeasy/userscript/master/habboSearch.js
+// @require     https://raw.github.com/Habboeasy/userscript/master/newArticles.js
 // ==/UserScript==
