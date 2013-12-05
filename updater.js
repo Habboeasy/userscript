@@ -1,4 +1,4 @@
-// MyHabboPlus Updater module
+// Habboeasy Updater module
 var autoUpdate="yes";
 function myhpUpdater (autoUpdate) {
     var updateURL;
