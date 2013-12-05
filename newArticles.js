@@ -1,4 +1,4 @@
-// MyHabboPlus Search Habbos on /me
+// Habboeasy Search Habbos on /me
 
 if (window.top==window){
 
