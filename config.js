@@ -21,12 +21,6 @@ if(GM_getValue("prefUpdateChannel")){
         var prefUpdateChannel="release"; //Default
 }
 
-if(GM_getValue("prefUpdateCustomChannel")){
-        var prefUpdateCustomChannel=GM_getValue("prefUpdateCustomChannel"); //User
-}else{
-        var prefUpdateCustomChannel=""; //Default
-}
-
 if(GM_getValue("prefUpdateLast")){
         var prefUpdateLast=GM_getValue("prefUpdateLast"); //User
 }else{
