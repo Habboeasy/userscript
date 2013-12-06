@@ -2,7 +2,7 @@
 var autoUpdate="yes";
 function myhpUpdater (autoUpdate) {
     var updateURL;
-    if(prefUpdateChannel=="release"){updateURL="https://github.com/habboeasy/userscript/releases/";}else if(prefUpdateChannel=="beta"){updateURL="https://raw.github.com/Habboeasy/userscript/beta/";}else{updateURL=prefUpdateCustomChannel;}
+    if(prefUpdateChannel=="release"){updateURL="https://raw.github.com/Habboeasy/userscript/release/";}else if(prefUpdateChannel=="beta"){updateURL="https://raw.github.com/MyHabboPlus/userscript/beta/";}else{updateURL=prefUpdateCustomChannel;}
     GM_xmlhttpRequest({method: "GET", url:updateURL+"VERSION", 
 onload: function(about) {
      version=about.responseText.replace("\n", "");
