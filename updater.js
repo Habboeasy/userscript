@@ -2,14 +2,14 @@
 var autoUpdate="yes";
 function myhpUpdater (autoUpdate) {
     var updateURL;
-    if(prefUpdateChannel=="release"){updateURL="https://raw.github.com/Habboeasy/userscript/release/";}else if(prefUpdateChannel=="beta"){updateURL="https://raw.github.com/MyHabboPlus/userscript/beta/";}else{updateURL=prefUpdateCustomChannel;}
+    if(prefUpdateChannel=="release"){updateURL="https://raw.github.com/Habboeasy/userscript/locked/";}else if(prefUpdateChannel=="beta"){updateURL="https://raw.github.com/Habboeasy/userscript/locked";}else{updateURL=prefUpdateCustomChannel;}
     GM_xmlhttpRequest({method: "GET", url:updateURL+"VERSION", 
 onload: function(about) {
      version=about.responseText.replace("\n", "");
       if(version!=prefRelease){
             myhpLightbox("standard", text["UpdaterNewTitle"], text["UpdaterNewText"]+' <strong>'+version+'</strong><br><button id="updater-button">'+text["UpdaterUpdate"]+'</button>');
             $("body").on("click", "#updater-button", function(){
-                window.open(updateURL+"MyHabboPlus.user.js");
+                window.open(updateURL+"Habboeasy.user.js");
                 $(this).parents(".lightbox-bg").fadeOut(600);
                 $("body").css({"overflow": "auto"});
                 prefUpdateLast=time+'';
