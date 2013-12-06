@@ -24,7 +24,7 @@ if(GM_getValue("prefUpdateChannel")){
 if(GM_getValue("prefUpdateCustomChannel")){
         var prefUpdateCustomChannel=GM_getValue("prefUpdateCustomChannel"); //User
 }else{
-        var prefUpdateCustomChannel="https://raw.github.com/MyHabboPlus/userscript/dev/"; //Default
+        var prefUpdateCustomChannel=""; //Default
 }
 
 if(GM_getValue("prefUpdateLast")){
