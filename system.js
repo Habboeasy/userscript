@@ -92,7 +92,6 @@ if (window.top==window){
     $("#header.clearfix").on("click", "#myhp-button-config", function(){
         myhpLightbox(null, text["Preferences"], '<div id="myhp-config">\
             <h2>'+text["PreferencesGeneral"]+'</h2>\
-            <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesVersion"]+' <strong>'+prefRelease+'</strong>.</div><button id="search-updates">'+text["PreferencesUpdate"]+'</button></div>\
             <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesUpdateFreq"]+'</div><select id="prefUpdateFreq"><option value="3600000" '+prefUpdateFreq1h+'>1 '+text["Hour"]+'</option><option value="7200000" '+prefUpdateFreq2h+'>2 '+text["Hours"]+'</option><option value="28800000" '+prefUpdateFreq8h+'>8 '+text["Hours"]+'</option><option value="86400000" '+prefUpdateFreq1d+'>1 '+text["Day"]+'</option><option value="604800000"  '+prefUpdateFreq1w+'>1 '+text["Week"]+'</option><option value="none" '+prefUpdateFreqNo+'>'+text["Never"]+'</option></select></div>\
             <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesUpdateChannel"]+'</div><select id="prefUpdateChannel"><option value="release" '+prefUpdateChannelRelease+'>'+text["PreferencesUpdateChannelRelease"]+'</option><option value="beta" '+prefUpdateChannelBeta+'>'+text["PreferencesUpdateChannelBeta"]+'</option><option value="custom" '+prefUpdateChannelCustom+'>'+text["PreferencesUpdateChannelCustom"]+'</option></select>\
             <br><div id="myhp-customchannel" style="'+prefUpdateCustomChannelStyle+'"><input type="text" value="'+prefUpdateCustomChannel+'" id="prefUpdateCustomChannel" style="width:700px;"></div></div>\
@@ -104,8 +103,8 @@ if (window.top==window){
             <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesNewArticles"]+'</div><input type="checkbox" id="prefNewArticles"'+prefNewArticlesValue+'><br><div style="float:left; margin-left:20px; font-style:italic;">http://youtube.com/watch?v=</div><input type="text" value="'+prefNewArticlesVideoValue+'" id="prefNewArticlesVideo" style="float:left;"></div>\
             <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesTweet"]+'</div><input type="checkbox" id="prefTweetList"'+prefTweetListValue+'></div>\
             ');
-        $("#myhp-config").on("click", "#search-updates", function(){
-            myhpUpdater("no");
+        $("").on("", , function(){
+            myhpUpdater("");
         });
         $("#myhp-config input, #myhp-config select").change(function() {
             if($(this).is("#prefLang")) {
