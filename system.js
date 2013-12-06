@@ -125,11 +125,6 @@ if (window.top==window){
                 prefUpdateChannel=prefUpdateChannelNew;
                 prefUpdateChannelRelease=""; prefUpdateChannelBeta=""; prefUpdateChannelCustom="";
                 if(prefUpdateChannel=="release"){prefUpdateChannelRelease="selected"; $("#myhp-customchannel").hide(); prefUpdateCustomChannelStyle="";} if(prefUpdateChannel=="beta"){prefUpdateChannelBeta="selected"; $("#myhp-customchannel").hide(); prefUpdateCustomChannelStyle="";} if(prefUpdateChannel=="custom"){prefUpdateChannelCustom="selected"; $("#myhp-customchannel").show(); prefUpdateCustomChannelStyle="display:block;"}
-            } else if($(this).is("#prefUpdateCustomChannel")) {
-                var prefUpdateCustomChannelNew=$(this).val();
-                GM_setValue("prefUpdateCustomChannel", prefUpdateCustomChannelNew);
-                prefUpdateCustomChannel=prefUpdateCustomChannelNew;
-               
             } else if($(this).is("#prefNewHabbo")) {
                 if($(this).is(":checked")){
                     GM_setValue("prefNewHabbo", "1");
