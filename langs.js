@@ -1,4 +1,4 @@
-// Habboeasy Languages
+// MyHabboPlus Languages
 var prefLang;
 var text;
 function loadLang() {
@@ -43,6 +43,7 @@ function loadLang() {
                         "PreferencesUpdateChannel": "Canal de actualización",
                         "PreferencesUpdateChannelRelease": "Versiones finales (Recomendado)",
                         "PreferencesUpdateChannelBeta": "Beta",
+                        "PreferencesUpdateChannelCustom": "Personalizado (Para expertos)",
                         "Language": "Idioma",
                         "LanguageAuto": "Detectar automáticamente",
                         "PreferencesModules": "Módulos",
@@ -79,66 +80,67 @@ function loadLang() {
                         "UpdaterErrorText": "No ha sido posible conectar con el canal de actualización."
                 };
         }else if(myhpLang=="pt") {
-                                 // Portuguese by ,desativaado.
-                                text= {
-                                        "Close": "Fechar",
-                                "Error": "Erro",
-                                "NoConnect": "Erro de conexão",
-                                "Loading": "Carregando...",
-                                "Hour": "Hora",
-                                "Hours": "Horas",
-                                "Day": "Dia",
-                                "Days": "Dias",
-                                "Week": "Semana",
-                                "Weeks": "Semanas",
-                                "Never": "Nunca",
+			 	// Portuguese by ,desativaado.
+		                text= {
+		                        "Close": "Fechar",
+		                "Error": "Erro",
+		                "NoConnect": "Erro de conexão",
+		                "Loading": "Carregando...",
+		                "Hour": "Hora",
+		                "Hours": "Horas",
+		                "Day": "Dia",
+		                "Days": "Dias",
+		                "Week": "Semana",
+		                "Weeks": "Semanas",
+		                "Never": "Nunca",
 
-                                "LightboxTitle": "Atenção!",
-                                "Preferences": "Preferências",
-                                "PreferencesGeneral": "Geral",
-                                "PreferencesVersion": "Você está executando a versão",
-                                "PreferencesUpdate": "Procurar por atualizações",
-                                "PreferencesUpdateFreq": "Atualizações frequentes",
-                                "PreferencesUpdateChannel": "Atualização de canais",
-                                "PreferencesUpdateChannelRelease": "Versões finais (recomendado)",
-                                "PreferencesUpdateChannelBeta": "Beta",
-                                "Language": "Idioma",
-                                "LanguageAuto": "Detecção automática",
-                                "PreferencesModules": "Módulos",
-                                "PreferencesTheme": "Tema alternativo",
-                                "PreferencesHomeInfo": "Informação do Habbo",
-                                "PreferencesHabboSearch": "Pesquise por usuário Habbo",
-                                "PreferencesNewArticles": "Alerta para novos artigos",
-                                "PreferencesTweet": "Mostrar tweets de fã sites",
+		                "LightboxTitle": "Atenção!",
+		                "Preferences": "Preferências",
+		                "PreferencesGeneral": "Geral",
+		                "PreferencesVersion": "Você está executando a versão",
+		                "PreferencesUpdate": "Procurar por atualizações",
+		                "PreferencesUpdateFreq": "Atualizações frequentes",
+		                "PreferencesUpdateChannel": "Atualização de canais",
+		                "PreferencesUpdateChannelRelease": "Versões finais (recomendado)",
+		                "PreferencesUpdateChannelBeta": "Beta",
+		                "PreferencesUpdateChannelCustom": "Personalizado (para especialistas)",
+		                "Language": "Idioma",
+		                "LanguageAuto": "Detecção automática",
+		                "PreferencesModules": "Módulos",
+		                "PreferencesTheme": "Tema alternativo",
+		                "PreferencesHomeInfo": "Informação do Habbo",
+		                "PreferencesHabboSearch": "Pesquise por usuário Habbo",
+		                "PreferencesNewArticles": "Alerta para novos artigos",
+		                "PreferencesTweet": "Mostrar tweets de fã sites",
 
-                                "HomeInfoDetails": "Detalhes do usuário",
-                                "HomeInfoNoExist": "Este Habbo não existe.",
-                                "HomeInfoAddFriend": "Adicionar como amigo",
-                                "HomeInfoAddError": "Houve um erro ao solicitar a amizade.",
-                                "HomeInfoDate": "Sou usuário Habbo desde:",
-                                "HomeInfoStatus": "Status:",
-                                "HomeInfoLastVisit": "Último login:",
-                                "HomeInfoFriends": "Friends",
-                                "HomeInfoFriendSearch": "Pesquisar...",
-                                "HomeInfoBadges": "Emblemas",
+		                "HomeInfoDetails": "Detalhes do usuário",
+		                "HomeInfoNoExist": "Este Habbo não existe.",
+		                "HomeInfoAddFriend": "Adicionar como amigo",
+		                "HomeInfoAddError": "Houve um erro ao solicitar a amizade.",
+		                "HomeInfoDate": "Sou usuário Habbo desde:",
+		                "HomeInfoStatus": "Status:",
+		                "HomeInfoLastVisit": "Último login:",
+		                "HomeInfoFriends": "Friends",
+		                "HomeInfoFriendSearch": "Pesquisar...",
+		                "HomeInfoBadges": "Emblemas",
 
-                                "HabboSearchPlaceholder": "Pesquisar usuário Habbo...",
+		                "HabboSearchPlaceholder": "Pesquisar usuário Habbo...",
 
-                                "NewArticles": "Alerta para novos artigos",
-                                "NewArticlesSearching": "Pesquisando novos artigos...",
-                                "NewArticlesTitle": "Nova notícia!",
-                                "NewArticlesDetected": "Nova notícia encontrada. Clique aqui.",
+		                "NewArticles": "Alerta para novos artigos",
+		                "NewArticlesSearching": "Pesquisando novos artigos...",
+		                "NewArticlesTitle": "Nova notícia!",
+		                "NewArticlesDetected": "Nova notícia encontrada. Clique aqui.",
 
-                                "UpdaterNewTitle": "Nova atualização",
-                                "UpdaterNewText": "Nova atualização encontrada:",
-                                "UpdaterUpdate": "Atualize agora",
-                                "UpdaterNoTitle": "Não há novas atualização",
-                                "UpdaterNoText": "Nenhuma atualização encontrada, você está usando a versão mais recente do Habboeasy.",
-                                "UpdaterErrorTitle": "Houve um erro ao tentar buscar novas atualizações",
-                                "UpdaterErrorText": "Não foi possível conectar com o canal de atualizações."
-                              }; 
+		                "UpdaterNewTitle": "Nova atualização",
+		                "UpdaterNewText": "Nova atualização encontrada:",
+		                "UpdaterUpdate": "Atualize agora",
+		                "UpdaterNoTitle": "Não há novas atualização",
+		                "UpdaterNoText": "Nenhuma atualização encontrada, você está usando a versão mais recente do Habboeasy.",
+		                "UpdaterErrorTitle": "Houve um erro ao tentar buscar novas atualizações",
+		                "UpdaterErrorText": "Não foi possível conectar com o canal de atualizações."
+		              }; 
         }else if(myhpLang=="fr") {
-                         // French by Matou19
+			 // French by Matou19
                         text= {
                         "Close": "Fermer",
                         "Error": "Erreur",
@@ -161,6 +163,7 @@ function loadLang() {
                         "PreferencesUpdateChannel": "Mises à jour de la chaîne",
                         "PreferencesUpdateChannelRelease": "Dernières mises à jour de la chaîne",
                         "PreferencesUpdateChannelBeta": "Beta",
+                        "PreferencesUpdateChannelCustom": "Personnalisé (pour les experts)",
                         "Language": "Langage",
                         "LanguageAuto": "Auto-détection",
                         "PreferencesModules": "Modules",
@@ -197,8 +200,8 @@ function loadLang() {
                         "UpdaterErrorText": "Aucune connexion possible au serveur de mise à jour"
               };
         }else if(myhpLang=="it") {
-                         // Italiano by Gabbo...
-                                     text= {
+			 // Italiano by Gabbo...
+     				text= {
                             "Close": "Chiudi",
                             "Error": "Errore",
                             "NoConnect": "Errore di connessione.",
@@ -218,7 +221,9 @@ function loadLang() {
                             "PreferencesUpdate": "Cerca aggiornamenti",
                             "PreferencesUpdateFreq": "Frequenza di aggiornamento",
                             "PreferencesUpdateChannel": "Tipo di versione",
+                            "PreferencesUpdateChannelRelease": "Versione finale (Consigliato)",
                             "PreferencesUpdateChannelBeta": "Beta",
+                            "PreferencesUpdateChannelCustom": "Personalizzato (Esperti)",
                             "Language": "Lingua",
                             "LanguageAuto": "Identificazione Auto",
                             "PreferencesModules": "Modules",
@@ -255,8 +260,8 @@ function loadLang() {
                             "UpdaterErrorText": "Non è stata possibile la connessione."
                          };
          }else if(myhpLang=="de") {
-                 // Deutsch by Skyki
-                text= {
+         	// Deutsch by Skyki
+        	text= {
                         "Close": "Schließen",
                         "Error": "Fehler",
                         "NoConnect": "Verbindungsfehler.",
@@ -278,6 +283,7 @@ function loadLang() {
                         "PreferencesUpdateChannel": "Kanalaktualisierung ",
                         "PreferencesUpdateChannelRelease": "Finale Versionen (empfohlen)",
                         "PreferencesUpdateChannelBeta": "Beta",
+                        "PreferencesUpdateChannelCustom": "Benutzerdefinierte (für Experten)",
                         "Language": "Sprache",
                         "LanguageAuto": "Automatisch erkennen ",
                         "PreferencesModules": "Module",
@@ -338,6 +344,7 @@ function loadLang() {
                         "PreferencesUpdateChannel": "Kanal yükseltme",
                         "PreferencesUpdateChannelRelease": "Son sürümleri (Önerilen)",
                         "PreferencesUpdateChannelBeta": "Beta",
+                        "PreferencesUpdateChannelCustom": "Özel (uzmanlar için)",
                         "Language": "Dil",
                         "LanguageAuto": "otomatik olarak algılar",
                         "PreferencesModules": "Modüller",
@@ -399,6 +406,7 @@ function loadLang() {
                         "PreferencesUpdateChannel": "Channel update",
                         "PreferencesUpdateChannelRelease": "Final releases (Recommended)",
                         "PreferencesUpdateChannelBeta": "Beta",
+                        "PreferencesUpdateChannelCustom": "Custom (For experts)",
                         "Language": "Language",
                         "LanguageAuto": "Auto detection",
                         "PreferencesModules": "Modules",
