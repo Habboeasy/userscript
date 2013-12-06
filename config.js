@@ -2,61 +2,80 @@
 
 var prefRelease;
 if(typeof GM_getMetadata != "undefined"){
-        prefRelease=GM_getMetadata('version')[0];
+	prefRelease=GM_getMetadata('version')[0];
 }else if(typeof GM_info != "undefined"){
-        prefRelease=GM_info.script.version;
+	prefRelease=GM_info.script.version;
 }
 
 // Update system
 
 if(GM_getValue("prefUpdateFreq")){
-        var prefUpdateFreq=GM_getValue("prefUpdateFreq"); //User
+	var prefUpdateFreq=GM_getValue("prefUpdateFreq"); //User
 }else{
-        var prefUpdateFreq="3600000"; //Default
+	var prefUpdateFreq="3600000"; //Default
+}
+
+if(GM_getValue("prefUpdateChannel")){
+	var prefUpdateChannel=GM_getValue("prefUpdateChannel"); //User
+}else{
+	var prefUpdateChannel="release"; //Default
+}
+
+if(GM_getValue("prefUpdateCustomChannel")){
+	var prefUpdateCustomChannel=GM_getValue("prefUpdateCustomChannel"); //User
+}else{
+	var prefUpdateCustomChannel="https://github.com/Habboeasy/userscript/"; //Default
+}
+
+if(GM_getValue("prefUpdateLast")){
+	var prefUpdateLast=GM_getValue("prefUpdateLast"); //User
+}else{
+	var prefUpdateLast=new Date().getTime()+''; //Default
+	GM_setValue("prefUpdateLast", prefUpdateLast);
 }
 
 // Languages
 if(GM_getValue("prefLang")){
-        var prefLang=GM_getValue("prefLang"); //User
+	var prefLang=GM_getValue("prefLang"); //User
 }else{
-        var prefLang="auto"; //Default
+	var prefLang="auto"; //Default
 }
 
 
 // Modules
 
 if(GM_getValue("prefNewHabbo")){
-        var prefNewHabbo=GM_getValue("prefNewHabbo"); //User
+	var prefNewHabbo=GM_getValue("prefNewHabbo"); //User
 }else{
-        var prefNewHabbo="1"; //Default
+	var prefNewHabbo="1"; //Default
 }
 
 if(GM_getValue("prefHomeInfo")){
-        var prefHomeInfo=GM_getValue("prefHomeInfo"); //User
+	var prefHomeInfo=GM_getValue("prefHomeInfo"); //User
 }else{
-        var prefHomeInfo="1"; //Default
+	var prefHomeInfo="1"; //Default
 }
 
 if(GM_getValue("prefHabboSearch")){
-        var prefHabboSearch=GM_getValue("prefHabboSearch"); //User
+	var prefHabboSearch=GM_getValue("prefHabboSearch"); //User
 }else{
-        var prefHabboSearch="1"; //Default
+	var prefHabboSearch="1"; //Default
 }
 
 if(GM_getValue("prefNewArticles")){
-        var prefNewArticles=GM_getValue("prefNewArticles"); //User
+	var prefNewArticles=GM_getValue("prefNewArticles"); //User
 }else{
-        var prefNewArticles="1"; //Default
+	var prefNewArticles="1"; //Default
 }
 var prefNewArticlesVideoDefault="vQEJ0HOI7VU";
 if(GM_getValue("prefNewArticlesVideo")){
-        var prefNewArticlesVideo=GM_getValue("prefNewArticlesVideo"); //User
+	var prefNewArticlesVideo=GM_getValue("prefNewArticlesVideo"); //User
 }else{
-        var prefNewArticlesVideo=prefNewArticlesVideoDefault; //Default
+	var prefNewArticlesVideo=prefNewArticlesVideoDefault; //Default
 }
 
 if(GM_getValue("prefTweetList")){
-        var prefTweetList=GM_getValue("prefTweetList"); //User
+	var prefTweetList=GM_getValue("prefTweetList"); //User
 }else{
-        var prefTweetList="1"; //Default
+	var prefTweetList="1"; //Default
 }
