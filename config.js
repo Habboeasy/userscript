@@ -15,19 +15,6 @@ if(GM_getValue("prefUpdateFreq")){
         var prefUpdateFreq="3600000"; //Default
 }
 
-if(GM_getValue("prefUpdateChannel")){
-        var prefUpdateChannel=GM_getValue("prefUpdateChannel"); //User
-}else{
-        var prefUpdateChannel="release"; //Default
-}
-
-if(GM_getValue("prefUpdateLast")){
-        var prefUpdateLast=GM_getValue("prefUpdateLast"); //User
-}else{
-        var prefUpdateLast=new Date().getTime()+''; //Default
-        GM_setValue("prefUpdateLast", prefUpdateLast);
-}
-
 // Languages
 if(GM_getValue("prefLang")){
         var prefLang=GM_getValue("prefLang"); //User
