@@ -83,7 +83,7 @@ if (window.top==window){
     
     // Config module
     
-    $("#habbos-online").after('<div id="myhp-button-config">'+text["Preferences"]+'<div class="myhp-button-config-name">Habboeasy by Xander</div></div>');
+    $("#habbos-online").after('<div id="myhp-button-config">'+text["Preferences"]+'<div class="myhp-button-config-name">MyHabboPlus</div></div>');
     
 
     var prefLangValueAuto=""; var prefLangValueES=""; var prefLangValueEN=""; var prefLangValuePT=""; var prefLangValueFR=""; var prefLangValueIT=""; var prefLangValueDE=""; var prefLangValueTR=""; var prefUpdateFreq1h=""; var prefUpdateFreq2h=""; var prefUpdateFreq8h=""; var prefUpdateFreq1d=""; var prefUpdateFreq1w=""; var prefUpdateFreqNo=""; var prefUpdateChannelRelease=""; var prefUpdateChannelBeta=""; var prefUpdateChannelCustom=""; var prefUpdateCustomChannelStyle="";  var prefNewHabboValue; var prefHomeInfoValue; var prefHabboSearchValue; var prefNewArticlesValue; var prefNewArticlesVideoValue; var prefTweetListValue;
@@ -94,6 +94,8 @@ if (window.top==window){
             <h2>'+text["PreferencesGeneral"]+'</h2>\
             <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesVersion"]+' <strong>'+prefRelease+'</strong>.</div><button id="search-updates">'+text["PreferencesUpdate"]+'</button></div>\
             <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesUpdateFreq"]+'</div><select id="prefUpdateFreq"><option value="3600000" '+prefUpdateFreq1h+'>1 '+text["Hour"]+'</option><option value="7200000" '+prefUpdateFreq2h+'>2 '+text["Hours"]+'</option><option value="28800000" '+prefUpdateFreq8h+'>8 '+text["Hours"]+'</option><option value="86400000" '+prefUpdateFreq1d+'>1 '+text["Day"]+'</option><option value="604800000"  '+prefUpdateFreq1w+'>1 '+text["Week"]+'</option><option value="none" '+prefUpdateFreqNo+'>'+text["Never"]+'</option></select></div>\
+            <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesUpdateChannel"]+'</div><select id="prefUpdateChannel"><option value="release" '+prefUpdateChannelRelease+'>'+text["PreferencesUpdateChannelRelease"]+'</option><option value="beta" '+prefUpdateChannelBeta+'>'+text["PreferencesUpdateChannelBeta"]+'</option><option value="custom" '+prefUpdateChannelCustom+'>'+text["PreferencesUpdateChannelCustom"]+'</option></select>\
+            <br><div id="myhp-customchannel" style="'+prefUpdateCustomChannelStyle+'"><input type="text" value="'+prefUpdateCustomChannel+'" id="prefUpdateCustomChannel" style="width:700px;"></div></div>\
             <div class="myhp-config-option"><div style="float:left;">'+text["Language"]+'</div><select id="prefLang"><option value="auto" '+prefLangValueAuto+'>'+text["LanguageAuto"]+'</option><option value="es" '+prefLangValueES+'>Español</option><option value="en" '+prefLangValueEN+'>English</option><option value="pt" '+prefLangValuePT+'>Português</option><option value="fr" '+prefLangValueFR+'>French</option><option value="it" '+prefLangValueIT+'>Italiano</option><option value="de" '+prefLangValueDE+'>Deutsch</option><option value="tr" '+prefLangValueTR+'>Türk</option></select></div>\
             <h2>'+text["PreferencesModules"]+'</h2>\
             <div class="myhp-config-option"><div style="float:left;">'+text["PreferencesTheme"]+'</div><input type="checkbox" id="prefNewHabbo"'+prefNewHabboValue+'></div>\
@@ -125,6 +127,11 @@ if (window.top==window){
                 prefUpdateChannel=prefUpdateChannelNew;
                 prefUpdateChannelRelease=""; prefUpdateChannelBeta=""; prefUpdateChannelCustom="";
                 if(prefUpdateChannel=="release"){prefUpdateChannelRelease="selected"; $("#myhp-customchannel").hide(); prefUpdateCustomChannelStyle="";} if(prefUpdateChannel=="beta"){prefUpdateChannelBeta="selected"; $("#myhp-customchannel").hide(); prefUpdateCustomChannelStyle="";} if(prefUpdateChannel=="custom"){prefUpdateChannelCustom="selected"; $("#myhp-customchannel").show(); prefUpdateCustomChannelStyle="display:block;"}
+            } else if($(this).is("#prefUpdateCustomChannel")) {
+                var prefUpdateCustomChannelNew=$(this).val();
+                GM_setValue("prefUpdateCustomChannel", prefUpdateCustomChannelNew);
+                prefUpdateCustomChannel=prefUpdateCustomChannelNew;
+               
             } else if($(this).is("#prefNewHabbo")) {
                 if($(this).is(":checked")){
                     GM_setValue("prefNewHabbo", "1");
@@ -192,7 +199,7 @@ if (window.top==window){
     // Twitter Lists
     if (dir=="/me" && prefTweetList=="1") {
         $("#twitterfeed-habblet-container .twitter-timeline").attr("width", "376").attr("height", "400");
-        $("#twitterfeed-habblet-container").after('<div style="float:left;"><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/OnHabboEasy"  data-widget-id='+twitterWidget[hotel]+' width="376" height="400">Tweets by @OnHabboEasy</a></div>');
+        $("#twitterfeed-habblet-container").after('<div style="float:left;"><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/OnHabboeasy/habbo-'+twitterHotel+'"  data-widget-id='+twitterWidget[hotel]+' width="376" height="400">Tweets by @OnHabboeasy/habbo-'+twitterHotel+'</a></div>');
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
     }
 }
