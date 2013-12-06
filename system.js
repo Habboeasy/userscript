@@ -83,7 +83,7 @@ if (window.top==window){
     
     // Config module
     
-    $("#habbos-online").after('<div id="myhp-button-config">'+text["Preferences"]+'<div class="myhp-button-config-name">MyHabboPlus</div></div>');
+    $("#habbos-online").after('<div id="myhp-button-config">'+text["Preferences"]+'<div class="myhp-button-config-name">Habboeasy</div></div>');
     
 
     var prefLangValueAuto=""; var prefLangValueES=""; var prefLangValueEN=""; var prefLangValuePT=""; var prefLangValueFR=""; var prefLangValueIT=""; var prefLangValueDE=""; var prefLangValueTR=""; var prefUpdateFreq1h=""; var prefUpdateFreq2h=""; var prefUpdateFreq8h=""; var prefUpdateFreq1d=""; var prefUpdateFreq1w=""; var prefUpdateFreqNo=""; var prefUpdateChannelRelease=""; var prefUpdateChannelBeta=""; var prefUpdateChannelCustom=""; var prefUpdateCustomChannelStyle="";  var prefNewHabboValue; var prefHomeInfoValue; var prefHabboSearchValue; var prefNewArticlesValue; var prefNewArticlesVideoValue; var prefTweetListValue;
